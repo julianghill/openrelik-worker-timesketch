@@ -63,4 +63,3 @@ docker compose exec timesketch-web tsctl create-user openrelik
       - ./data:/usr/share/openrelik/data
     command: "celery --app=src.app worker --task-events --concurrency=1 --loglevel=INFO -Q openrelik-worker-timesketch"
 ```
-
